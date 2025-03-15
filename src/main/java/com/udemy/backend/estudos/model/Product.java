@@ -9,7 +9,7 @@ import java.util.InputMismatchException;
 
 @Entity
 public class Product {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;

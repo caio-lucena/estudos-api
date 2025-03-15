@@ -42,15 +42,20 @@ public class ProductService {
 
     public Product updateProduct(Integer id, Product product){
 
+        Product productAux = new Product();
+
+        productAux.setName(product.getName());
+        productAux.setAmount(product.getAmount());
+        productAux.setPrice(product.getPrice());
+        productAux.setDescription(product.getDescription());
+
         if (id > 0) {
             productRepository.deleteById(id);
-
         }
         else {
             throw new ExceptionProductService("É preciso informar um ID válido. Apenas números inteiros maiores que zero são aceitos");
         }
 
-        product.setId(id);
         return productRepository.save(product);
     }
 
