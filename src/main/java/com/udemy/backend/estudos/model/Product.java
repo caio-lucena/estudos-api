@@ -1,10 +1,20 @@
 package com.udemy.backend.estudos.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 import java.util.InputMismatchException;
 
+@Entity
 public class Product {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
+    private Integer amount;
     private Double price;
     private String description;
 
@@ -12,7 +22,7 @@ public class Product {
 
     }
 
-    public Product (String nameInit, Double priceInit){
+    public Product (String nameInit, Integer amountInit, Double priceInit){
         name = nameInit;
 
         if (priceInit > 0){
@@ -20,10 +30,17 @@ public class Product {
         }
         else {
             throw new InputMismatchException("É preciso informar um preço maior que R$ 0,00");
+        }
+
+        if (amountInit > 0) {
+            amount = amountInit;
+        }
+        else{
+            throw new InputMismatchException("É preciso informar um valor maior que zero para quantidade");
         }
     }
 
-    public Product (String nameInit, Double priceInit, String descriptionInit){
+    public Product (String nameInit, Integer amountInit, Double priceInit, String descriptionInit){
         name = nameInit;
 
         if (priceInit > 0){
@@ -32,6 +49,14 @@ public class Product {
         else {
             throw new InputMismatchException("É preciso informar um preço maior que R$ 0,00");
         }
+
+        if (amountInit > 0) {
+            amount = amountInit;
+        }
+        else{
+            throw new InputMismatchException("É preciso informar um valor maior que zero para quantidade");
+        }
+
         description = descriptionInit;
     }
 
@@ -49,6 +74,14 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Integer amount) {
+        this.amount = amount;
     }
 
     public Double getPrice() {

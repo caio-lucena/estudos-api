@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository // injeção de dependência
+//@Repository
 public class ProductRepositoryOld {
     private List<Product> productList = new ArrayList<>();
     private Integer lastId = 0;
