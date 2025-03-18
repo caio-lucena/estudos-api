@@ -1,4 +1,4 @@
-package com.udemy.backend.estudos.controller;
+package com.udemy.backend.estudos.view.controller;
 
 import com.udemy.backend.estudos.model.Product;
 import com.udemy.backend.estudos.service.ProductService;

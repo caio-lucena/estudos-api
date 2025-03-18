@@ -1,0 +1,14 @@
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/EstudosApplication.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/handler/RestExceptionHendler.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/model/Product.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/model/errors/ErrorMessage.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/model/exceptions/ResourceNotFoundException.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/repository/ProductRepository.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/repository/ProductRepositoryOld.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/repository/exceptions/ExceptionProductRepositoryOld.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/service/ProductService.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/service/exceptions/ExceptionProductService.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/shared/ProductDto.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/view/controller/ProductController.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/view/model/ProductRequest.java
+/home/caio/Estudos/Udemy/Backend/estudos/src/main/java/com/udemy/backend/estudos/view/model/ProductResponse.java
